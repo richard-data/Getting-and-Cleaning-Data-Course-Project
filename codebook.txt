@@ -1,0 +1,34 @@
+Data Set Information
+
+Part 1. Merge the training and the test sets to create one data set.
+
+After setting the source directory for the files, read into tables the data located in
+
+subject_train <- read.table("C:/Users/Richard/Downloads/getdata%2Fprojectfiles%2FUCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt", quote="\"", comment.char="")
+  View(subject_train)
+subject_test <- read.table("C:/Users/Richard/Downloads/getdata%2Fprojectfiles%2FUCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt", quote="\"", comment.char="")
+  View(subject_test)
+y_train <- read.table("C:/Users/Richard/Downloads/getdata%2Fprojectfiles%2FUCI HAR Dataset/UCI HAR Dataset/train/y_train.txt", quote="\"", comment.char="")
+  View(y_train)
+y_test <- read.table("C:/Users/Richard/Downloads/getdata%2Fprojectfiles%2FUCI HAR Dataset/UCI HAR Dataset/test/y_test.txt", quote="\"", comment.char="")
+  View(y_test)
+X_test <- read.table("C:/Users/Richard/Downloads/getdata%2Fprojectfiles%2FUCI HAR Dataset/UCI HAR Dataset/test/X_test.txt", quote="\"", comment.char="")
+  View(X_test)
+X_train <- read.table("C:/Users/Richard/Downloads/getdata%2Fprojectfiles%2FUCI HAR Dataset/UCI HAR Dataset/train/X_train.txt", quote="\"", comment.char="")
+  View(X_train)
+features <- read.table("C:/Users/Richard/Downloads/getdata%2Fprojectfiles%2FUCI HAR Dataset/UCI HAR Dataset/features.txt", quote="\"", comment.char="")
+  View(features)
+
+Assign column names and merge to create one data set.
+Part 2. Extract only the measurements on the mean and standard deviation for each measurement.
+
+Part 3. Use descriptive activity names to name the activities in the data set
+
+Merge data subset with the activity_labels
+
+Part 4. Appropriately label the data set with descriptive activity names.
+
+Use gsub. 
+
+Part 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+
